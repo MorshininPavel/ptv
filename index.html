@@ -1,15 +1,8 @@
-<!-- gentest v1.00 -->
-<!-- 
-UTU_5275_122_56_58_11_15_2_2017
- -->
-<!-- newtime
-11-2-2017 13:20:20
- -->
 <html>
 <head>
 <meta charset=utf-8">
 <Script Language="JavaScript">  
-<!-- Начало сценария 
+<!-- РќР°С‡Р°Р»Рѕ СЃС†РµРЅР°СЂРёСЏ 
 var rez=[1,1,2,4,4,4,4,1,1,4,4,1,4,2,1,2,1,4,1,1,1,1,4,2,2,1,2,4,1,2,1,2,4,1,2,8,4,4,2,4,1,2,1];
 var vinq=[3,3,4,4,4,4,3,4,4,3,3,3,4,3,3,3,3,3,4,5,3,3,4,4,3,2,3,3,3,4,5,4,3,3,3,4,4,3,3,3,3,2,3];
 var kfQ=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
@@ -163,7 +156,7 @@ function check_me(){
 		for(i=0;i<svob.length;i++){
 			names=document.getElementsByName("S"+(i+1));
 			if(names[0].value=='')vah=true;}}
-	if(vah) alert("Вы выполнили не все задания. Проверьте себя.");
+	if(vah) alert("Р’С‹ РІС‹РїРѕР»РЅРёР»Рё РЅРµ РІСЃРµ Р·Р°РґР°РЅРёСЏ. РџСЂРѕРІРµСЂСЊС‚Рµ СЃРµР±СЏ.");
 	else{
 		if(document.getElementById("torf1") != null){
 			for(i=0;i<rez.length;i++){
@@ -199,8 +192,8 @@ function check_me(){
 				totalS[i]=0;
 				names=document.getElementsByName("S"+(i+1));
 				var names1 = names[0].value;
-				names1 = names1.replace("ё", "е");
-				names1 = names1.replace("Ё", "Е");
+				names1 = names1.replace("С‘", "Рµ");
+				names1 = names1.replace("РЃ", "Р•");
 				truerez = code(svob[i]);
 				for(j=0;j<truerez.length;j++){if(names1==truerez[j]){totalS[i]=1;}}
 				totalSAll += kfS[i];
@@ -215,7 +208,7 @@ function showResult(totalQS, answerTrue, total){
 	for(i=0;i<kfQ.length;i++) maxQS += kfQ[i];
 	for(i=0;i<kfS.length;i++) maxQS += kfS[i];
 	vv = total*100/maxQS;
-	document.getElementById("winotv").innerHTML='<span style="font-size: 18px;">Вы набрали</span><br/><b>'+answerTrue.toFixed(1)+'</b> баллов из <b>'+totalQS.toFixed(1)+'</b> возможных<br>Тест пройден на <b>'+vv.toFixed(0)+'%</b>';
+	document.getElementById("winotv").innerHTML='<span style="font-size: 18px;">Р’С‹ РЅР°Р±СЂР°Р»Рё</span><br/><b>'+answerTrue.toFixed(1)+'</b> Р±Р°Р»Р»РѕРІ РёР· <b>'+totalQS.toFixed(1)+'</b> РІРѕР·РјРѕР¶РЅС‹С…<br>РўРµСЃС‚ РїСЂРѕР№РґРµРЅ РЅР° <b>'+vv.toFixed(0)+'%</b>';
 	document.getElementById("rezbutton").style.display="none"; 
 	document.getElementById("winotv").style.display="block"; 
 	aspan = document.getElementsByName("aspan");
@@ -243,7 +236,7 @@ Array.prototype.shuffle = function( deep ){
    this[i] = this[j];
    this[j] = t;}
   return this;};
-<!--Окончание сценария -->
+<!--РћРєРѕРЅС‡Р°РЅРёРµ СЃС†РµРЅР°СЂРёСЏ -->
 </script>
 <!--####################################################################################################################################-->
 <!--####################################################################################################################################-->
@@ -253,26 +246,26 @@ Array.prototype.shuffle = function( deep ){
 <div class="onetest">
 <div class="testname">
 <!-- name -->
-Наименование пожарно-технического вооружения
+РќР°РёРјРµРЅРѕРІР°РЅРёРµ РїРѕР¶Р°СЂРЅРѕ-С‚РµС…РЅРёС‡РµСЃРєРѕРіРѕ РІРѕРѕСЂСѓР¶РµРЅРёСЏ
 </div>
 <div class="testdescription">
 <!-- opisan -->
-Найдите правильные ответы наименования пожарно-технического вооружения 
+РќР°Р№РґРёС‚Рµ РїСЂР°РІРёР»СЊРЅС‹Рµ РѕС‚РІРµС‚С‹ РЅР°РёРјРµРЅРѕРІР°РЅРёСЏ РїРѕР¶Р°СЂРЅРѕ-С‚РµС…РЅРёС‡РµСЃРєРѕРіРѕ РІРѕРѕСЂСѓР¶РµРЅРёСЏ 
 <!-- opisan end -->
 </div>
 <div class="testline"></div>
 <div class="testclass">
 <!-- predmet -->
-ПТВ
+РџРўР’
  
 <!-- klass -->
-Пожарные, водители
+РџРѕР¶Р°СЂРЅС‹Рµ, РІРѕРґРёС‚РµР»Рё
 &nbsp; | &nbsp;
-Дата: 15.02.2017
+Р”Р°С‚Р°: 15.02.2017
 &nbsp; | &nbsp;
-Вопросов: 43
+Р’РѕРїСЂРѕСЃРѕРІ: 43
 &nbsp; | &nbsp;
-Автор: 
+РђРІС‚РѕСЂ: 
 <!-- avtor -->
 M.P.
 
@@ -289,7 +282,7 @@ kol vop end-->
 <form name="test" method="post">
 <!-- vopr i otveti -->
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 1
 <!-- vopros
 <img src="bpm-big.jpg" style="max-width:200px;"> 
@@ -300,9 +293,9 @@ vopros end -->
 3
 0
 5
-Лом легкий
-Крюк пожарный
-Багор пожарный
+Р›РѕРј Р»РµРіРєРёР№
+РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№
+Р‘Р°РіРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№
 
 
 
@@ -312,7 +305,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 2
 <!-- vopros
 <img src="dielectric-nozhn-sm.jpg" style="max-width:200px;"> 
@@ -323,9 +316,9 @@ vopros end -->
 3
 0
 5
-Ножницы по металлу
-Ножницы для резки проводов
-Диэлектрические ножницы
+РќРѕР¶РЅРёС†С‹ РїРѕ РјРµС‚Р°Р»Р»Сѓ
+РќРѕР¶РЅРёС†С‹ РґР»СЏ СЂРµР·РєРё РїСЂРѕРІРѕРґРѕРІ
+Р”РёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ РЅРѕР¶РЅРёС†С‹
 
 
 
@@ -335,7 +328,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 3
 <!-- vopros
 <img src="g-600-sm.jpg" style="max-width:200px;"> 
@@ -346,10 +339,10 @@ vopros end -->
 4
 0
 5
-Пеносмеситель
-Насос для отбора воды
-Гидроэлеватор Г-600
-Нет правильного ответа
+РџРµРЅРѕСЃРјРµСЃРёС‚РµР»СЊ
+РќР°СЃРѕСЃ РґР»СЏ РѕС‚Р±РѕСЂР° РІРѕРґС‹
+Р“РёРґСЂРѕСЌР»РµРІР°С‚РѕСЂ Р“-600
+РќРµС‚ РїСЂР°РІРёР»СЊРЅРѕРіРѕ РѕС‚РІРµС‚Р°
 
 
 
@@ -358,7 +351,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 4
 <!-- vopros
 <img src="galoshi-dielectric-sm.jpg" style="max-width:200px;"> 
@@ -369,10 +362,10 @@ vopros end -->
 4
 0
 6
-Боты
-Галоши резиновые диэлектрические
-Не входят в норма штатной положенности пожарного автомобиля
-Гражданские галоши
+Р‘РѕС‚С‹
+Р“Р°Р»РѕС€Рё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ
+РќРµ РІС…РѕРґСЏС‚ РІ РЅРѕСЂРјР° С€С‚Р°С‚РЅРѕР№ РїРѕР»РѕР¶РµРЅРЅРѕСЃС‚Рё РїРѕР¶Р°СЂРЅРѕРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ
+Р“СЂР°Р¶РґР°РЅСЃРєРёРµ РіР°Р»РѕС€Рё
 
 
 
@@ -381,7 +374,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 5
 <!-- vopros
 <img src="gm-150.jpg" style="max-width:200px;"> 
@@ -392,10 +385,10 @@ vopros end -->
 4
 0
 6
-Головка рукавная
-Головка муфтовая
-Головка цапковая
-Головка заглушка 
+Р“РѕР»РѕРІРєР° СЂСѓРєР°РІРЅР°СЏ
+Р“РѕР»РѕРІРєР° РјСѓС„С‚РѕРІР°СЏ
+Р“РѕР»РѕРІРєР° С†Р°РїРєРѕРІР°СЏ
+Р“РѕР»РѕРІРєР° Р·Р°РіР»СѓС€РєР° 
 
 
 
@@ -404,7 +397,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 6
 <!-- vopros
 <img src="gps-600-menu.jpg" style="max-width:200px;"> 
@@ -415,10 +408,10 @@ vopros end -->
 4
 0
 6
-Ствол ПУРГА
-ГПС-600
-СВП
-СВП-600
+РЎС‚РІРѕР» РџРЈР Р“Рђ
+Р“РџРЎ-600
+РЎР’Рџ
+РЎР’Рџ-600
 
 
 
@@ -427,7 +420,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 7
 <!-- vopros
 <img src="gts-50.jpg" style="max-width:200px;"> 
@@ -438,9 +431,9 @@ vopros end -->
 3
 0
 7
-Головка рукавная
-Головка цапковая
-Головка заглушка
+Р“РѕР»РѕРІРєР° СЂСѓРєР°РІРЅР°СЏ
+Р“РѕР»РѕРІРєР° С†Р°РїРєРѕРІР°СЏ
+Р“РѕР»РѕРІРєР° Р·Р°РіР»СѓС€РєР°
 
 
 
@@ -450,7 +443,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 8
 <!-- vopros
 <img src="gz-150.jpg" style="max-width:200px;"> 
@@ -461,10 +454,10 @@ vopros end -->
 4
 0
 4
-Головка рукавная
-Головка муфтовая
-Головка цапковая
-Головка заглушка
+Р“РѕР»РѕРІРєР° СЂСѓРєР°РІРЅР°СЏ
+Р“РѕР»РѕРІРєР° РјСѓС„С‚РѕРІР°СЏ
+Р“РѕР»РѕРІРєР° С†Р°РїРєРѕРІР°СЏ
+Р“РѕР»РѕРІРєР° Р·Р°РіР»СѓС€РєР°
 
 
 
@@ -473,7 +466,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 9
 <!-- vopros
 <img src="k-80-150-menu.jpg" style="max-width:200px;"> 
@@ -484,10 +477,10 @@ vopros end -->
 4
 0
 4
-Крюк
-Ключ для насоса
-Крюк для крышки ПГ
-Ключ К-80 и К-150
+РљСЂСЋРє
+РљР»СЋС‡ РґР»СЏ РЅР°СЃРѕСЃР°
+РљСЂСЋРє РґР»СЏ РєСЂС‹С€РєРё РџР“
+РљР»СЋС‡ Рљ-80 Рё Рљ-150
 
 
 
@@ -496,7 +489,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 10
 <!-- vopros
 <img src="kluch-big.jpg" style="max-width:200px;"> 
@@ -508,9 +501,9 @@ vopros end -->
 3
 0
 7
-Ключ торцовый
-Ключ для открывания задвижки
-Ключ рукавный
+РљР»СЋС‡ С‚РѕСЂС†РѕРІС‹Р№
+РљР»СЋС‡ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ Р·Р°РґРІРёР¶РєРё
+РљР»СЋС‡ СЂСѓРєР°РІРЅС‹Р№
 
 
 
@@ -520,7 +513,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 11
 <!-- vopros
 <img src="kpa-sm.jpg" style="max-width:200px;"> 
@@ -531,9 +524,9 @@ vopros end -->
 3
 0
 7
-Пожарная колонка КП 
-Пожарный гидрант ПГ
-Кран пожарный ПК
+РџРѕР¶Р°СЂРЅР°СЏ РєРѕР»РѕРЅРєР° РљРџ 
+РџРѕР¶Р°СЂРЅС‹Р№ РіРёРґСЂР°РЅС‚ РџР“
+РљСЂР°РЅ РїРѕР¶Р°СЂРЅС‹Р№ РџРљ
 
 
 
@@ -543,7 +536,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 12
 <!-- vopros
 <img src="kp-big.jpg" style="max-width:200px;"> 
@@ -554,9 +547,9 @@ vopros end -->
 3
 0
 5
-Задержка рукавная
-Крюк для открывания ПГ
-Крюк пожарный КП
+Р—Р°РґРµСЂР¶РєР° СЂСѓРєР°РІРЅР°СЏ
+РљСЂСЋРє РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РџР“
+РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РљРџ
 
 
 
@@ -566,7 +559,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 13
 <!-- vopros
 <img src="kruk-big.jpg" style="max-width:200px;"> 
@@ -577,10 +570,10 @@ vopros end -->
 4
 0
 6
-Крюк пожарный
-Крюк пожарный для открывания люков пожарных гидрантов
-Крюк пожарный для открывания окон
-Крюк пожарный для открывания дверей
+РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№
+РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ Р»СЋРєРѕРІ РїРѕР¶Р°СЂРЅС‹С… РіРёРґСЂР°РЅС‚РѕРІ
+РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РѕРєРѕРЅ
+РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РґРІРµСЂРµР№
 
 
 
@@ -589,7 +582,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 14
 <!-- vopros
 <img src="lafet.jpeg" style="max-width:200px;"> 
@@ -600,9 +593,9 @@ vopros end -->
 3
 0
 6
-Лафетный стационарный ствол
-Переносной лафетный ствол
-Комбинированный лафетный ствол
+Р›Р°С„РµС‚РЅС‹Р№ СЃС‚Р°С†РёРѕРЅР°СЂРЅС‹Р№ СЃС‚РІРѕР»
+РџРµСЂРµРЅРѕСЃРЅРѕР№ Р»Р°С„РµС‚РЅС‹Р№ СЃС‚РІРѕР»
+РљРѕРјР±РёРЅРёСЂРѕРІР°РЅРЅС‹Р№ Р»Р°С„РµС‚РЅС‹Р№ СЃС‚РІРѕР»
 
 
 
@@ -612,7 +605,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 15
 <!-- vopros
 <img src="les3.jpg" style="max-width:200px;"> 
@@ -623,9 +616,9 @@ vopros end -->
 3
 0
 5
-Лестница палка
-Лестница стационарная
-Лестница пожарная трёхколенная
+Р›РµСЃС‚РЅРёС†Р° РїР°Р»РєР°
+Р›РµСЃС‚РЅРёС†Р° СЃС‚Р°С†РёРѕРЅР°СЂРЅР°СЏ
+Р›РµСЃС‚РЅРёС†Р° РїРѕР¶Р°СЂРЅР°СЏ С‚СЂС‘С…РєРѕР»РµРЅРЅР°СЏ
 
 
 
@@ -635,7 +628,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 16
 <!-- vopros
 <img src="lest-palka.jpg" style="max-width:200px;"> 
@@ -646,9 +639,9 @@ vopros end -->
 3
 0
 6
-Лестница штурмовая
-Лестница-палка
-Лестница пожарная трёхколенная
+Р›РµСЃС‚РЅРёС†Р° С€С‚СѓСЂРјРѕРІР°СЏ
+Р›РµСЃС‚РЅРёС†Р°-РїР°Р»РєР°
+Р›РµСЃС‚РЅРёС†Р° РїРѕР¶Р°СЂРЅР°СЏ С‚СЂС‘С…РєРѕР»РµРЅРЅР°СЏ
 
 
 
@@ -658,7 +651,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 17
 <!-- vopros
 <img src="lest-sturm.jpg" style="max-width:200px;"> 
@@ -669,9 +662,9 @@ vopros end -->
 3
 0
 5
-Лестница с крюком
-Спортивная лестница
-Лестница штурмовая
+Р›РµСЃС‚РЅРёС†Р° СЃ РєСЂСЋРєРѕРј
+РЎРїРѕСЂС‚РёРІРЅР°СЏ Р»РµСЃС‚РЅРёС†Р°
+Р›РµСЃС‚РЅРёС†Р° С€С‚СѓСЂРјРѕРІР°СЏ
 
 
 
@@ -681,7 +674,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 18
 <!-- vopros
 <img src="lpl-pm-big.jpg" style="max-width:200px;"> 
@@ -692,9 +685,9 @@ vopros end -->
 3
 0
 7
-Лом пожарный легкий для комплектации пожарных машин 
-Лом пожарный универсальный ЛПУ
-Лом пожарный тяжелый ЛПТ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ 
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ Р›РџРў
 
 
 
@@ -704,7 +697,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 19
 <!-- vopros
 <img src="lpsha-big.jpg" style="max-width:200px;"> 
@@ -715,10 +708,10 @@ vopros end -->
 4
 0
 4
-Лом пожарный универсальный ЛПУ
-Лом пожарный легкий для комплектации пожарных машин
-Лом пожарный тяжелый ЛПТ
-Лом пожарный с шаровой головкой ЛПШ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ Р›РџРў
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СЃ С€Р°СЂРѕРІРѕР№ РіРѕР»РѕРІРєРѕР№ Р›РџРЁ
 
 
 
@@ -727,7 +720,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 20
 <!-- vopros
 <img src="lpt-big.jpg" style="max-width:200px;"> 
@@ -738,11 +731,11 @@ vopros end -->
 5
 0
 3
-Лом пожарный с шаровой головкой ЛПШ
-Лом пожарный легкий для комплектации пожарных машин ЛПЛ - ПМ
-Лом пожарный универсальный ЛПУ
-Багор пожарный для пожарных машин БПМ
-Лом пожарный тяжелый ЛПТ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СЃ С€Р°СЂРѕРІРѕР№ РіРѕР»РѕРІРєРѕР№ Р›РџРЁ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ Р›РџР› - РџРњ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ
+Р‘Р°РіРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ Р‘РџРњ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ Р›РџРў
 
 
 otvet end -->
@@ -750,7 +743,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 21
 <!-- vopros
 <img src="lpy-big.jpg" style="max-width:200px;"> 
@@ -761,9 +754,9 @@ vopros end -->
 3
 0
 5
-Лом пожарный с шаровой головкой ЛПШ
-Лом пожарный легкий для комплектации пожарных машин ЛПЛ - ПМ
-Лом пожарный универсальный ЛПУ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СЃ С€Р°СЂРѕРІРѕР№ РіРѕР»РѕРІРєРѕР№ Р›РџРЁ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ Р›РџР› - РџРњ
+Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ
 
 
 
@@ -773,7 +766,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 22
 <!-- vopros
 <img src="mpr-150-big.jpg" style="max-width:200px;"> 
@@ -784,9 +777,9 @@ vopros end -->
 3
 0
 5
-Мостик для преодаления препядствий
-Противооткаты
-Мостик рукавный МПР
+РњРѕСЃС‚РёРє РґР»СЏ РїСЂРµРѕРґР°Р»РµРЅРёСЏ РїСЂРµРїСЏРґСЃС‚РІРёР№
+РџСЂРѕС‚РёРІРѕРѕС‚РєР°С‚С‹
+РњРѕСЃС‚РёРє СЂСѓРєР°РІРЅС‹Р№ РњРџР 
 
 
 
@@ -796,7 +789,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 23
 <!-- vopros
 <img src="op.jpg" style="max-width:200px;"> 
@@ -807,10 +800,10 @@ vopros end -->
 4
 0
 6
-Воздушно-эмульсионный огнетушитель
-Переносные порошковые огнетушители
-Углекислотный огнетушитель
-Генератор огнетушащего аэрозоля
+Р’РѕР·РґСѓС€РЅРѕ-СЌРјСѓР»СЊСЃРёРѕРЅРЅС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ
+РџРµСЂРµРЅРѕСЃРЅС‹Рµ РїРѕСЂРѕС€РєРѕРІС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё
+РЈРіР»РµРєРёСЃР»РѕС‚РЅС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ
+Р“РµРЅРµСЂР°С‚РѕСЂ РѕРіРЅРµС‚СѓС€Р°С‰РµРіРѕ Р°СЌСЂРѕР·РѕР»СЏ
 
 
 
@@ -819,7 +812,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 24
 <!-- vopros
 <img src="ort.jpg" style="max-width:200px;"> 
@@ -830,10 +823,10 @@ vopros end -->
 4
 0
 5
-СРК-50
-РСК-50
-ОРТ-50
-РС 70 АП
+РЎР Рљ-50
+Р РЎРљ-50
+РћР Рў-50
+Р РЎ 70 РђРџ
 
 
 
@@ -842,7 +835,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 25
 <!-- vopros
 <img src="perchatki-lateksnye-sm.jpg" style="max-width:200px;"> 
@@ -853,9 +846,9 @@ vopros end -->
 3
 0
 6
-Перчатки резиновые диэлектрические (шовные)
-Перчатки резиновые диэлектрические (латексные)
-Перчатки пожарные
+РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (С€РѕРІРЅС‹Рµ)
+РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (Р»Р°С‚РµРєСЃРЅС‹Рµ)
+РџРµСЂС‡Р°С‚РєРё РїРѕР¶Р°СЂРЅС‹Рµ
 
 
 
@@ -865,7 +858,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 26
 <!-- vopros
 <img src="perchatki-shovnye-sm.jpg" style="max-width:200px;"> 
@@ -876,8 +869,8 @@ vopros end -->
 2
 0
 6
-Перчатки резиновые диэлектрические (латексные)
-Перчатки резиновые диэлектрические (шовные)
+РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (Р»Р°С‚РµРєСЃРЅС‹Рµ)
+РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (С€РѕРІРЅС‹Рµ)
 
 
 
@@ -888,7 +881,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 27
 <!-- vopros
 <img src="ps1-2-sm.jpg" style="max-width:200px;"> 
@@ -899,9 +892,9 @@ vopros end -->
 3
 0
 6
-Гидроэлеватор Г-600
-Пеносмесители ПС-1 и ПС-2
-Пенные вставки
+Р“РёРґСЂРѕСЌР»РµРІР°С‚РѕСЂ Р“-600
+РџРµРЅРѕСЃРјРµСЃРёС‚РµР»Рё РџРЎ-1 Рё РџРЎ-2
+РџРµРЅРЅС‹Рµ РІСЃС‚Р°РІРєРё
 
 
 
@@ -911,7 +904,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 28
 <!-- vopros
 <img src="psk50.png" style="max-width:200px;"> 
@@ -922,9 +915,9 @@ vopros end -->
 3
 0
 7
-СРК-50
-РСК-50
-РС-50
+РЎР Рљ-50
+Р РЎРљ-50
+Р РЎ-50
 
 
 
@@ -934,7 +927,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 29
 <!-- vopros
 <img src="rch-150-sm.jpg" style="max-width:200px;"> 
@@ -945,9 +938,9 @@ vopros end -->
 3
 0
 5
-Разветвление РТ-70
-Четырехходовое разветвление РЧ-90
-Четырехходовое разветвление РЧ-150
+Р Р°Р·РІРµС‚РІР»РµРЅРёРµ Р Рў-70
+Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-90
+Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-150
 
 
 
@@ -957,7 +950,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 30
 <!-- vopros
 <img src="rs.jpg" style="max-width:200px;"> 
@@ -968,10 +961,10 @@ vopros end -->
 4
 0
 5
-СРК-50
-РСК-50
-РС-50
-РС 50 П
+РЎР Рљ-50
+Р РЎРљ-50
+Р РЎ-50
+Р РЎ 50 Рџ
 
 
 
@@ -980,7 +973,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 31
 <!-- vopros
 <img src="rsk70.jpg" style="max-width:200px;"> 
@@ -991,11 +984,11 @@ vopros end -->
 5
 0
 3
-РСК-50
-СРК-50
-РС-А(м), РС-Б(м)
-РС-70
-РСКЗ-70
+Р РЎРљ-50
+РЎР Рљ-50
+Р РЎ-Рђ(Рј), Р РЎ-Р‘(Рј)
+Р РЎ-70
+Р РЎРљР—-70
 
 
 otvet end -->
@@ -1003,7 +996,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 32
 <!-- vopros
 <img src="rsk70.png" style="max-width:200px;"> 
@@ -1014,10 +1007,10 @@ vopros end -->
 4
 0
 5
-РСК-50
-РС-50
-РС-70
-РС 70 АП
+Р РЎРљ-50
+Р РЎ-50
+Р РЎ-70
+Р РЎ 70 РђРџ
 
 
 
@@ -1026,7 +1019,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 33
 <!-- vopros
 <img src="rt70-80-sm.jpg" style="max-width:200px;"> 
@@ -1037,9 +1030,9 @@ vopros end -->
 3
 0
 7
-Разветвление РТ-70 и РТ-80
-Четырехходовое разветвление РЧ-150
-Четырехходовое разветвление РЧ-90
+Р Р°Р·РІРµС‚РІР»РµРЅРёРµ Р Рў-70 Рё Р Рў-80
+Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-150
+Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-90
 
 
 
@@ -1049,7 +1042,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 34
 <!-- vopros
 <img src="rukav-standart.jpg" style="max-width:200px;"> 
@@ -1060,9 +1053,9 @@ vopros end -->
 3
 0
 5
-Рукав напорно-всасывающий
-Рукав всасывающий
-Рукав напорный
+Р СѓРєР°РІ РЅР°РїРѕСЂРЅРѕ-РІСЃР°СЃС‹РІР°СЋС‰РёР№
+Р СѓРєР°РІ РІСЃР°СЃС‹РІР°СЋС‰РёР№
+Р СѓРєР°РІ РЅР°РїРѕСЂРЅС‹Р№
 
 
 
@@ -1072,7 +1065,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 35
 <!-- vopros
 <img src="sv100-125-setka-sm.jpg" style="max-width:200px;"> 
@@ -1083,9 +1076,9 @@ vopros end -->
 3
 0
 6
-Водосборник ВС-125
-Cетки СВ-100, СВ-125
-Сетка СВ-80
+Р’РѕРґРѕСЃР±РѕСЂРЅРёРє Р’РЎ-125
+CРµС‚РєРё РЎР’-100, РЎР’-125
+РЎРµС‚РєР° РЎР’-80
 
 
 
@@ -1095,7 +1088,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 36
 <!-- vopros
 <img src="tpp-sp-sm.jpg" style="max-width:200px;"> 
@@ -1106,10 +1099,10 @@ vopros end -->
 4
 0
 7
-Топор пожарный поясной ТПП-СП
-Топор пожарного носимый
-Топор пожарный поясной ТПП-СТ
-Топор пожарный штурмовой ТПШ-СП
+РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ РїРѕСЏСЃРЅРѕР№ РўРџРџ-РЎРџ
+РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅРѕРіРѕ РЅРѕСЃРёРјС‹Р№
+РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ РїРѕСЏСЃРЅРѕР№ РўРџРџ-РЎРў
+РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ С€С‚СѓСЂРјРѕРІРѕР№ РўРџРЁ-РЎРџ
 
 
 
@@ -1118,7 +1111,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 37
 <!-- vopros
 <img src="ug.jpg" style="max-width:200px;"> 
@@ -1129,10 +1122,10 @@ vopros end -->
 4
 0
 6
-Порошковый огнетушитель
-Углекислотный огнетушитель
-Аэрозольный
-Воздушно-пенные огнетушители
+РџРѕСЂРѕС€РєРѕРІС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ
+РЈРіР»РµРєРёСЃР»РѕС‚РЅС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ
+РђСЌСЂРѕР·РѕР»СЊРЅС‹Р№
+Р’РѕР·РґСѓС€РЅРѕ-РїРµРЅРЅС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё
 
 
 
@@ -1141,7 +1134,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 38
 <!-- vopros
 <img src="vozd_pen.jpg" style="max-width:200px;"> 
@@ -1152,9 +1145,9 @@ vopros end -->
 3
 0
 7
-Воздушно-пенные огнетушители
-Углекислотные огнетушители
-Порошковые огнетушители
+Р’РѕР·РґСѓС€РЅРѕ-РїРµРЅРЅС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё
+РЈРіР»РµРєРёСЃР»РѕС‚РЅС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё
+РџРѕСЂРѕС€РєРѕРІС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё
 
 
 
@@ -1164,7 +1157,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 39
 <!-- vopros
 <img src="vps-30-50-03.jpg" style="max-width:200px;"> 
@@ -1175,9 +1168,9 @@ vopros end -->
 3
 0
 6
-Веревки спасательная
-Веревка пожарная спасательная
-Тросс буксировочный
+Р’РµСЂРµРІРєРё СЃРїР°СЃР°С‚РµР»СЊРЅР°СЏ
+Р’РµСЂРµРІРєР° РїРѕР¶Р°СЂРЅР°СЏ СЃРїР°СЃР°С‚РµР»СЊРЅР°СЏ
+РўСЂРѕСЃСЃ Р±СѓРєСЃРёСЂРѕРІРѕС‡РЅС‹Р№
 
 
 
@@ -1187,7 +1180,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 40
 <!-- vopros
 <img src="vs125-sm.jpg" style="max-width:200px;"> 
@@ -1198,9 +1191,9 @@ vopros end -->
 3
 0
 7
-Водосборник ВС-125
-Штаны
-Разветвление 2-х ходовое
+Р’РѕРґРѕСЃР±РѕСЂРЅРёРє Р’РЎ-125
+РЁС‚Р°РЅС‹
+Р Р°Р·РІРµС‚РІР»РµРЅРёРµ 2-С… С…РѕРґРѕРІРѕРµ
 
 
 
@@ -1210,7 +1203,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 41
 <!-- vopros
 <img src="vsas.jpg" style="max-width:200px;"> 
@@ -1221,9 +1214,9 @@ vopros end -->
 3
 0
 5
-Рукав напорный
-Напорно-всасывающий рукав
-Рукав всасывающий 
+Р СѓРєР°РІ РЅР°РїРѕСЂРЅС‹Р№
+РќР°РїРѕСЂРЅРѕ-РІСЃР°СЃС‹РІР°СЋС‰РёР№ СЂСѓРєР°РІ
+Р СѓРєР°РІ РІСЃР°СЃС‹РІР°СЋС‰РёР№ 
 
 
 
@@ -1233,7 +1226,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 42
 <!-- vopros
 <img src="zpr-80-big.jpg" style="max-width:200px;"> 
@@ -1244,8 +1237,8 @@ vopros end -->
 2
 0
 7
-Зажим пожарный рукавный ЗПР-80
-Зажим пожарный рукавный ЗПР-150
+Р—Р°Р¶РёРј РїРѕР¶Р°СЂРЅС‹Р№ СЂСѓРєР°РІРЅС‹Р№ Р—РџР -80
+Р—Р°Р¶РёРј РїРѕР¶Р°СЂРЅС‹Р№ СЂСѓРєР°РІРЅС‹Р№ Р—РџР -150
 
 
 
@@ -1256,7 +1249,7 @@ otvet end -->
 
 </div>
 <div class="onetest" name="onetest"><font size="4" color="000099"><b>
-<!-- nom vopr -->Вопрос № 
+<!-- nom vopr -->Р’РѕРїСЂРѕСЃ в„– 
 43
 <!-- vopros
 <img src="zr-80-big.jpg" style="max-width:200px;"> 
@@ -1267,9 +1260,9 @@ vopros end -->
 3
 0
 5
-Крюк пожарный
-крюк для открывания гидранта
-Задержка рукавная
+РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№
+РєСЂСЋРє РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РіРёРґСЂР°РЅС‚Р°
+Р—Р°РґРµСЂР¶РєР° СЂСѓРєР°РІРЅР°СЏ
 
 
 
@@ -1280,7 +1273,7 @@ otvet end -->
 </div>
 <div id="winotv"></div>
 <div id="rezbutton">
-<input type="button" name="simb" onclick="check_me()" value="Проверить результат">
+<input type="button" name="simb" onclick="check_me()" value="РџСЂРѕРІРµСЂРёС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚">
 </div>
 </form>
 <Script Language="JavaScript">
@@ -1288,319 +1281,319 @@ var vopr_otv = [
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="bpm-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf1"></div>'+
-'<input type=radio name=Q1><span name="aspan" class="aspan" onclick="getchecked(1,0)"> Лом легкий</span><br>'
-+'<input type=radio name=Q1><span name="aspan" class="aspan" onclick="getchecked(1,1)"> Крюк пожарный</span><br>'
-+'<input type=radio name=Q1><span name="aspan" class="aspan" onclick="getchecked(1,2)"> Багор пожарный</span><br>'
+'<input type=radio name=Q1><span name="aspan" class="aspan" onclick="getchecked(1,0)"> Р›РѕРј Р»РµРіРєРёР№</span><br>'
++'<input type=radio name=Q1><span name="aspan" class="aspan" onclick="getchecked(1,1)"> РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№</span><br>'
++'<input type=radio name=Q1><span name="aspan" class="aspan" onclick="getchecked(1,2)"> Р‘Р°РіРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="dielectric-nozhn-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf2"></div>'+
-'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,0)"> Ножницы по металлу</span><br>'
-+'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,1)"> Ножницы для резки проводов</span><br>'
-+'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,2)"> Диэлектрические ножницы</span><br>'
+'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,0)"> РќРѕР¶РЅРёС†С‹ РїРѕ РјРµС‚Р°Р»Р»Сѓ</span><br>'
++'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,1)"> РќРѕР¶РЅРёС†С‹ РґР»СЏ СЂРµР·РєРё РїСЂРѕРІРѕРґРѕРІ</span><br>'
++'<input type=radio name=Q2><span name="aspan" class="aspan" onclick="getchecked(2,2)"> Р”РёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ РЅРѕР¶РЅРёС†С‹</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="g-600-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf3"></div>'+
-'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,0)"> Пеносмеситель</span><br>'
-+'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,1)"> Насос для отбора воды</span><br>'
-+'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,2)"> Гидроэлеватор Г-600</span><br>'
-+'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,3)"> Нет правильного ответа</span><br>'
+'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,0)"> РџРµРЅРѕСЃРјРµСЃРёС‚РµР»СЊ</span><br>'
++'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,1)"> РќР°СЃРѕСЃ РґР»СЏ РѕС‚Р±РѕСЂР° РІРѕРґС‹</span><br>'
++'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,2)"> Р“РёРґСЂРѕСЌР»РµРІР°С‚РѕСЂ Р“-600</span><br>'
++'<input type=radio name=Q3><span name="aspan" class="aspan" onclick="getchecked(3,3)"> РќРµС‚ РїСЂР°РІРёР»СЊРЅРѕРіРѕ РѕС‚РІРµС‚Р°</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="galoshi-dielectric-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf4"></div>'+
-'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,0)"> Боты</span><br>'
-+'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,1)"> Галоши резиновые диэлектрические</span><br>'
-+'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,2)"> Не входят в норма штатной положенности пожарного автомобиля</span><br>'
-+'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,3)"> Гражданские галоши</span><br>'
+'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,0)"> Р‘РѕС‚С‹</span><br>'
++'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,1)"> Р“Р°Р»РѕС€Рё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ</span><br>'
++'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,2)"> РќРµ РІС…РѕРґСЏС‚ РІ РЅРѕСЂРјР° С€С‚Р°С‚РЅРѕР№ РїРѕР»РѕР¶РµРЅРЅРѕСЃС‚Рё РїРѕР¶Р°СЂРЅРѕРіРѕ Р°РІС‚РѕРјРѕР±РёР»СЏ</span><br>'
++'<input type=radio name=Q4><span name="aspan" class="aspan" onclick="getchecked(4,3)"> Р“СЂР°Р¶РґР°РЅСЃРєРёРµ РіР°Р»РѕС€Рё</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="gm-150.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf5"></div>'+
-'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,0)"> Головка рукавная</span><br>'
-+'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,1)"> Головка муфтовая</span><br>'
-+'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,2)"> Головка цапковая</span><br>'
-+'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,3)"> Головка заглушка </span><br>'
+'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,0)"> Р“РѕР»РѕРІРєР° СЂСѓРєР°РІРЅР°СЏ</span><br>'
++'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,1)"> Р“РѕР»РѕРІРєР° РјСѓС„С‚РѕРІР°СЏ</span><br>'
++'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,2)"> Р“РѕР»РѕРІРєР° С†Р°РїРєРѕРІР°СЏ</span><br>'
++'<input type=radio name=Q5><span name="aspan" class="aspan" onclick="getchecked(5,3)"> Р“РѕР»РѕРІРєР° Р·Р°РіР»СѓС€РєР° </span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="gps-600-menu.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf6"></div>'+
-'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,0)"> Ствол ПУРГА</span><br>'
-+'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,1)"> ГПС-600</span><br>'
-+'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,2)"> СВП</span><br>'
-+'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,3)"> СВП-600</span><br>'
+'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,0)"> РЎС‚РІРѕР» РџРЈР Р“Рђ</span><br>'
++'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,1)"> Р“РџРЎ-600</span><br>'
++'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,2)"> РЎР’Рџ</span><br>'
++'<input type=radio name=Q6><span name="aspan" class="aspan" onclick="getchecked(6,3)"> РЎР’Рџ-600</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="gts-50.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf7"></div>'+
-'<input type=radio name=Q7><span name="aspan" class="aspan" onclick="getchecked(7,0)"> Головка рукавная</span><br>'
-+'<input type=radio name=Q7><span name="aspan" class="aspan" onclick="getchecked(7,1)"> Головка цапковая</span><br>'
-+'<input type=radio name=Q7><span name="aspan" class="aspan" onclick="getchecked(7,2)"> Головка заглушка</span><br>'
+'<input type=radio name=Q7><span name="aspan" class="aspan" onclick="getchecked(7,0)"> Р“РѕР»РѕРІРєР° СЂСѓРєР°РІРЅР°СЏ</span><br>'
++'<input type=radio name=Q7><span name="aspan" class="aspan" onclick="getchecked(7,1)"> Р“РѕР»РѕРІРєР° С†Р°РїРєРѕРІР°СЏ</span><br>'
++'<input type=radio name=Q7><span name="aspan" class="aspan" onclick="getchecked(7,2)"> Р“РѕР»РѕРІРєР° Р·Р°РіР»СѓС€РєР°</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="gz-150.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf8"></div>'+
-'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,0)"> Головка рукавная</span><br>'
-+'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,1)"> Головка муфтовая</span><br>'
-+'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,2)"> Головка цапковая</span><br>'
-+'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,3)"> Головка заглушка</span><br>'
+'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,0)"> Р“РѕР»РѕРІРєР° СЂСѓРєР°РІРЅР°СЏ</span><br>'
++'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,1)"> Р“РѕР»РѕРІРєР° РјСѓС„С‚РѕРІР°СЏ</span><br>'
++'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,2)"> Р“РѕР»РѕРІРєР° С†Р°РїРєРѕРІР°СЏ</span><br>'
++'<input type=radio name=Q8><span name="aspan" class="aspan" onclick="getchecked(8,3)"> Р“РѕР»РѕРІРєР° Р·Р°РіР»СѓС€РєР°</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="k-80-150-menu.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf9"></div>'+
-'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,0)"> Крюк</span><br>'
-+'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,1)"> Ключ для насоса</span><br>'
-+'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,2)"> Крюк для крышки ПГ</span><br>'
-+'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,3)"> Ключ К-80 и К-150</span><br>'
+'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,0)"> РљСЂСЋРє</span><br>'
++'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,1)"> РљР»СЋС‡ РґР»СЏ РЅР°СЃРѕСЃР°</span><br>'
++'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,2)"> РљСЂСЋРє РґР»СЏ РєСЂС‹С€РєРё РџР“</span><br>'
++'<input type=radio name=Q9><span name="aspan" class="aspan" onclick="getchecked(9,3)"> РљР»СЋС‡ Рљ-80 Рё Рљ-150</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="kluch-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf10"></div>'+
-'<input type=radio name=Q10><span name="aspan" class="aspan" onclick="getchecked(10,0)"> Ключ торцовый</span><br>'
-+'<input type=radio name=Q10><span name="aspan" class="aspan" onclick="getchecked(10,1)"> Ключ для открывания задвижки</span><br>'
-+'<input type=radio name=Q10><span name="aspan" class="aspan" onclick="getchecked(10,2)"> Ключ рукавный</span><br>'
+'<input type=radio name=Q10><span name="aspan" class="aspan" onclick="getchecked(10,0)"> РљР»СЋС‡ С‚РѕСЂС†РѕРІС‹Р№</span><br>'
++'<input type=radio name=Q10><span name="aspan" class="aspan" onclick="getchecked(10,1)"> РљР»СЋС‡ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ Р·Р°РґРІРёР¶РєРё</span><br>'
++'<input type=radio name=Q10><span name="aspan" class="aspan" onclick="getchecked(10,2)"> РљР»СЋС‡ СЂСѓРєР°РІРЅС‹Р№</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="kpa-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf11"></div>'+
-'<input type=radio name=Q11><span name="aspan" class="aspan" onclick="getchecked(11,0)"> Пожарная колонка КП </span><br>'
-+'<input type=radio name=Q11><span name="aspan" class="aspan" onclick="getchecked(11,1)"> Пожарный гидрант ПГ</span><br>'
-+'<input type=radio name=Q11><span name="aspan" class="aspan" onclick="getchecked(11,2)"> Кран пожарный ПК</span><br>'
+'<input type=radio name=Q11><span name="aspan" class="aspan" onclick="getchecked(11,0)"> РџРѕР¶Р°СЂРЅР°СЏ РєРѕР»РѕРЅРєР° РљРџ </span><br>'
++'<input type=radio name=Q11><span name="aspan" class="aspan" onclick="getchecked(11,1)"> РџРѕР¶Р°СЂРЅС‹Р№ РіРёРґСЂР°РЅС‚ РџР“</span><br>'
++'<input type=radio name=Q11><span name="aspan" class="aspan" onclick="getchecked(11,2)"> РљСЂР°РЅ РїРѕР¶Р°СЂРЅС‹Р№ РџРљ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="kp-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf12"></div>'+
-'<input type=radio name=Q12><span name="aspan" class="aspan" onclick="getchecked(12,0)"> Задержка рукавная</span><br>'
-+'<input type=radio name=Q12><span name="aspan" class="aspan" onclick="getchecked(12,1)"> Крюк для открывания ПГ</span><br>'
-+'<input type=radio name=Q12><span name="aspan" class="aspan" onclick="getchecked(12,2)"> Крюк пожарный КП</span><br>'
+'<input type=radio name=Q12><span name="aspan" class="aspan" onclick="getchecked(12,0)"> Р—Р°РґРµСЂР¶РєР° СЂСѓРєР°РІРЅР°СЏ</span><br>'
++'<input type=radio name=Q12><span name="aspan" class="aspan" onclick="getchecked(12,1)"> РљСЂСЋРє РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РџР“</span><br>'
++'<input type=radio name=Q12><span name="aspan" class="aspan" onclick="getchecked(12,2)"> РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РљРџ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="kruk-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf13"></div>'+
-'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,0)"> Крюк пожарный</span><br>'
-+'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,1)"> Крюк пожарный для открывания люков пожарных гидрантов</span><br>'
-+'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,2)"> Крюк пожарный для открывания окон</span><br>'
-+'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,3)"> Крюк пожарный для открывания дверей</span><br>'
+'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,0)"> РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№</span><br>'
++'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,1)"> РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ Р»СЋРєРѕРІ РїРѕР¶Р°СЂРЅС‹С… РіРёРґСЂР°РЅС‚РѕРІ</span><br>'
++'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,2)"> РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РѕРєРѕРЅ</span><br>'
++'<input type=radio name=Q13><span name="aspan" class="aspan" onclick="getchecked(13,3)"> РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РґРІРµСЂРµР№</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="lafet.jpeg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf14"></div>'+
-'<input type=radio name=Q14><span name="aspan" class="aspan" onclick="getchecked(14,0)"> Лафетный стационарный ствол</span><br>'
-+'<input type=radio name=Q14><span name="aspan" class="aspan" onclick="getchecked(14,1)"> Переносной лафетный ствол</span><br>'
-+'<input type=radio name=Q14><span name="aspan" class="aspan" onclick="getchecked(14,2)"> Комбинированный лафетный ствол</span><br>'
+'<input type=radio name=Q14><span name="aspan" class="aspan" onclick="getchecked(14,0)"> Р›Р°С„РµС‚РЅС‹Р№ СЃС‚Р°С†РёРѕРЅР°СЂРЅС‹Р№ СЃС‚РІРѕР»</span><br>'
++'<input type=radio name=Q14><span name="aspan" class="aspan" onclick="getchecked(14,1)"> РџРµСЂРµРЅРѕСЃРЅРѕР№ Р»Р°С„РµС‚РЅС‹Р№ СЃС‚РІРѕР»</span><br>'
++'<input type=radio name=Q14><span name="aspan" class="aspan" onclick="getchecked(14,2)"> РљРѕРјР±РёРЅРёСЂРѕРІР°РЅРЅС‹Р№ Р»Р°С„РµС‚РЅС‹Р№ СЃС‚РІРѕР»</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="les3.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf15"></div>'+
-'<input type=radio name=Q15><span name="aspan" class="aspan" onclick="getchecked(15,0)"> Лестница палка</span><br>'
-+'<input type=radio name=Q15><span name="aspan" class="aspan" onclick="getchecked(15,1)"> Лестница стационарная</span><br>'
-+'<input type=radio name=Q15><span name="aspan" class="aspan" onclick="getchecked(15,2)"> Лестница пожарная трёхколенная</span><br>'
+'<input type=radio name=Q15><span name="aspan" class="aspan" onclick="getchecked(15,0)"> Р›РµСЃС‚РЅРёС†Р° РїР°Р»РєР°</span><br>'
++'<input type=radio name=Q15><span name="aspan" class="aspan" onclick="getchecked(15,1)"> Р›РµСЃС‚РЅРёС†Р° СЃС‚Р°С†РёРѕРЅР°СЂРЅР°СЏ</span><br>'
++'<input type=radio name=Q15><span name="aspan" class="aspan" onclick="getchecked(15,2)"> Р›РµСЃС‚РЅРёС†Р° РїРѕР¶Р°СЂРЅР°СЏ С‚СЂС‘С…РєРѕР»РµРЅРЅР°СЏ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="lest-palka.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf16"></div>'+
-'<input type=radio name=Q16><span name="aspan" class="aspan" onclick="getchecked(16,0)"> Лестница штурмовая</span><br>'
-+'<input type=radio name=Q16><span name="aspan" class="aspan" onclick="getchecked(16,1)"> Лестница-палка</span><br>'
-+'<input type=radio name=Q16><span name="aspan" class="aspan" onclick="getchecked(16,2)"> Лестница пожарная трёхколенная</span><br>'
+'<input type=radio name=Q16><span name="aspan" class="aspan" onclick="getchecked(16,0)"> Р›РµСЃС‚РЅРёС†Р° С€С‚СѓСЂРјРѕРІР°СЏ</span><br>'
++'<input type=radio name=Q16><span name="aspan" class="aspan" onclick="getchecked(16,1)"> Р›РµСЃС‚РЅРёС†Р°-РїР°Р»РєР°</span><br>'
++'<input type=radio name=Q16><span name="aspan" class="aspan" onclick="getchecked(16,2)"> Р›РµСЃС‚РЅРёС†Р° РїРѕР¶Р°СЂРЅР°СЏ С‚СЂС‘С…РєРѕР»РµРЅРЅР°СЏ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="lest-sturm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf17"></div>'+
-'<input type=radio name=Q17><span name="aspan" class="aspan" onclick="getchecked(17,0)"> Лестница с крюком</span><br>'
-+'<input type=radio name=Q17><span name="aspan" class="aspan" onclick="getchecked(17,1)"> Спортивная лестница</span><br>'
-+'<input type=radio name=Q17><span name="aspan" class="aspan" onclick="getchecked(17,2)"> Лестница штурмовая</span><br>'
+'<input type=radio name=Q17><span name="aspan" class="aspan" onclick="getchecked(17,0)"> Р›РµСЃС‚РЅРёС†Р° СЃ РєСЂСЋРєРѕРј</span><br>'
++'<input type=radio name=Q17><span name="aspan" class="aspan" onclick="getchecked(17,1)"> РЎРїРѕСЂС‚РёРІРЅР°СЏ Р»РµСЃС‚РЅРёС†Р°</span><br>'
++'<input type=radio name=Q17><span name="aspan" class="aspan" onclick="getchecked(17,2)"> Р›РµСЃС‚РЅРёС†Р° С€С‚СѓСЂРјРѕРІР°СЏ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="lpl-pm-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf18"></div>'+
-'<input type=radio name=Q18><span name="aspan" class="aspan" onclick="getchecked(18,0)"> Лом пожарный легкий для комплектации пожарных машин </span><br>'
-+'<input type=radio name=Q18><span name="aspan" class="aspan" onclick="getchecked(18,1)"> Лом пожарный универсальный ЛПУ</span><br>'
-+'<input type=radio name=Q18><span name="aspan" class="aspan" onclick="getchecked(18,2)"> Лом пожарный тяжелый ЛПТ</span><br>'
+'<input type=radio name=Q18><span name="aspan" class="aspan" onclick="getchecked(18,0)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ </span><br>'
++'<input type=radio name=Q18><span name="aspan" class="aspan" onclick="getchecked(18,1)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ</span><br>'
++'<input type=radio name=Q18><span name="aspan" class="aspan" onclick="getchecked(18,2)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ Р›РџРў</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="lpsha-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf19"></div>'+
-'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,0)"> Лом пожарный универсальный ЛПУ</span><br>'
-+'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,1)"> Лом пожарный легкий для комплектации пожарных машин</span><br>'
-+'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,2)"> Лом пожарный тяжелый ЛПТ</span><br>'
-+'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,3)"> Лом пожарный с шаровой головкой ЛПШ</span><br>'
+'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,0)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ</span><br>'
++'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,1)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ</span><br>'
++'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,2)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ Р›РџРў</span><br>'
++'<input type=radio name=Q19><span name="aspan" class="aspan" onclick="getchecked(19,3)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СЃ С€Р°СЂРѕРІРѕР№ РіРѕР»РѕРІРєРѕР№ Р›РџРЁ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="lpt-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf20"></div>'+
-'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,0)"> Лом пожарный с шаровой головкой ЛПШ</span><br>'
-+'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,1)"> Лом пожарный легкий для комплектации пожарных машин ЛПЛ - ПМ</span><br>'
-+'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,2)"> Лом пожарный универсальный ЛПУ</span><br>'
-+'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,3)"> Багор пожарный для пожарных машин БПМ</span><br>'
-+'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,4)"> Лом пожарный тяжелый ЛПТ</span><br>'
+'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,0)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СЃ С€Р°СЂРѕРІРѕР№ РіРѕР»РѕРІРєРѕР№ Р›РџРЁ</span><br>'
++'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,1)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ Р›РџР› - РџРњ</span><br>'
++'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,2)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ</span><br>'
++'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,3)"> Р‘Р°РіРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ РґР»СЏ РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ Р‘РџРњ</span><br>'
++'<input type=radio name=Q20><span name="aspan" class="aspan" onclick="getchecked(20,4)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ Р›РџРў</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="lpy-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf21"></div>'+
-'<input type=radio name=Q21><span name="aspan" class="aspan" onclick="getchecked(21,0)"> Лом пожарный с шаровой головкой ЛПШ</span><br>'
-+'<input type=radio name=Q21><span name="aspan" class="aspan" onclick="getchecked(21,1)"> Лом пожарный легкий для комплектации пожарных машин ЛПЛ - ПМ</span><br>'
-+'<input type=radio name=Q21><span name="aspan" class="aspan" onclick="getchecked(21,2)"> Лом пожарный универсальный ЛПУ</span><br>'
+'<input type=radio name=Q21><span name="aspan" class="aspan" onclick="getchecked(21,0)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СЃ С€Р°СЂРѕРІРѕР№ РіРѕР»РѕРІРєРѕР№ Р›РџРЁ</span><br>'
++'<input type=radio name=Q21><span name="aspan" class="aspan" onclick="getchecked(21,1)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ Р»РµРіРєРёР№ РґР»СЏ РєРѕРјРїР»РµРєС‚Р°С†РёРё РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ Р›РџР› - РџРњ</span><br>'
++'<input type=radio name=Q21><span name="aspan" class="aspan" onclick="getchecked(21,2)"> Р›РѕРј РїРѕР¶Р°СЂРЅС‹Р№ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Р№ Р›РџРЈ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="mpr-150-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf22"></div>'+
-'<input type=radio name=Q22><span name="aspan" class="aspan" onclick="getchecked(22,0)"> Мостик для преодаления препядствий</span><br>'
-+'<input type=radio name=Q22><span name="aspan" class="aspan" onclick="getchecked(22,1)"> Противооткаты</span><br>'
-+'<input type=radio name=Q22><span name="aspan" class="aspan" onclick="getchecked(22,2)"> Мостик рукавный МПР</span><br>'
+'<input type=radio name=Q22><span name="aspan" class="aspan" onclick="getchecked(22,0)"> РњРѕСЃС‚РёРє РґР»СЏ РїСЂРµРѕРґР°Р»РµРЅРёСЏ РїСЂРµРїСЏРґСЃС‚РІРёР№</span><br>'
++'<input type=radio name=Q22><span name="aspan" class="aspan" onclick="getchecked(22,1)"> РџСЂРѕС‚РёРІРѕРѕС‚РєР°С‚С‹</span><br>'
++'<input type=radio name=Q22><span name="aspan" class="aspan" onclick="getchecked(22,2)"> РњРѕСЃС‚РёРє СЂСѓРєР°РІРЅС‹Р№ РњРџР </span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="op.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf23"></div>'+
-'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,0)"> Воздушно-эмульсионный огнетушитель</span><br>'
-+'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,1)"> Переносные порошковые огнетушители</span><br>'
-+'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,2)"> Углекислотный огнетушитель</span><br>'
-+'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,3)"> Генератор огнетушащего аэрозоля</span><br>'
+'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,0)"> Р’РѕР·РґСѓС€РЅРѕ-СЌРјСѓР»СЊСЃРёРѕРЅРЅС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ</span><br>'
++'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,1)"> РџРµСЂРµРЅРѕСЃРЅС‹Рµ РїРѕСЂРѕС€РєРѕРІС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё</span><br>'
++'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,2)"> РЈРіР»РµРєРёСЃР»РѕС‚РЅС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ</span><br>'
++'<input type=radio name=Q23><span name="aspan" class="aspan" onclick="getchecked(23,3)"> Р“РµРЅРµСЂР°С‚РѕСЂ РѕРіРЅРµС‚СѓС€Р°С‰РµРіРѕ Р°СЌСЂРѕР·РѕР»СЏ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="ort.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf24"></div>'+
-'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,0)"> СРК-50</span><br>'
-+'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,1)"> РСК-50</span><br>'
-+'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,2)"> ОРТ-50</span><br>'
-+'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,3)"> РС 70 АП</span><br>'
+'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,0)"> РЎР Рљ-50</span><br>'
++'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,1)"> Р РЎРљ-50</span><br>'
++'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,2)"> РћР Рў-50</span><br>'
++'<input type=radio name=Q24><span name="aspan" class="aspan" onclick="getchecked(24,3)"> Р РЎ 70 РђРџ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="perchatki-lateksnye-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf25"></div>'+
-'<input type=radio name=Q25><span name="aspan" class="aspan" onclick="getchecked(25,0)"> Перчатки резиновые диэлектрические (шовные)</span><br>'
-+'<input type=radio name=Q25><span name="aspan" class="aspan" onclick="getchecked(25,1)"> Перчатки резиновые диэлектрические (латексные)</span><br>'
-+'<input type=radio name=Q25><span name="aspan" class="aspan" onclick="getchecked(25,2)"> Перчатки пожарные</span><br>'
+'<input type=radio name=Q25><span name="aspan" class="aspan" onclick="getchecked(25,0)"> РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (С€РѕРІРЅС‹Рµ)</span><br>'
++'<input type=radio name=Q25><span name="aspan" class="aspan" onclick="getchecked(25,1)"> РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (Р»Р°С‚РµРєСЃРЅС‹Рµ)</span><br>'
++'<input type=radio name=Q25><span name="aspan" class="aspan" onclick="getchecked(25,2)"> РџРµСЂС‡Р°С‚РєРё РїРѕР¶Р°СЂРЅС‹Рµ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="perchatki-shovnye-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf26"></div>'+
-'<input type=radio name=Q26><span name="aspan" class="aspan" onclick="getchecked(26,0)"> Перчатки резиновые диэлектрические (латексные)</span><br>'
-+'<input type=radio name=Q26><span name="aspan" class="aspan" onclick="getchecked(26,1)"> Перчатки резиновые диэлектрические (шовные)</span><br>'
+'<input type=radio name=Q26><span name="aspan" class="aspan" onclick="getchecked(26,0)"> РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (Р»Р°С‚РµРєСЃРЅС‹Рµ)</span><br>'
++'<input type=radio name=Q26><span name="aspan" class="aspan" onclick="getchecked(26,1)"> РџРµСЂС‡Р°С‚РєРё СЂРµР·РёРЅРѕРІС‹Рµ РґРёСЌР»РµРєС‚СЂРёС‡РµСЃРєРёРµ (С€РѕРІРЅС‹Рµ)</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="ps1-2-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf27"></div>'+
-'<input type=radio name=Q27><span name="aspan" class="aspan" onclick="getchecked(27,0)"> Гидроэлеватор Г-600</span><br>'
-+'<input type=radio name=Q27><span name="aspan" class="aspan" onclick="getchecked(27,1)"> Пеносмесители ПС-1 и ПС-2</span><br>'
-+'<input type=radio name=Q27><span name="aspan" class="aspan" onclick="getchecked(27,2)"> Пенные вставки</span><br>'
+'<input type=radio name=Q27><span name="aspan" class="aspan" onclick="getchecked(27,0)"> Р“РёРґСЂРѕСЌР»РµРІР°С‚РѕСЂ Р“-600</span><br>'
++'<input type=radio name=Q27><span name="aspan" class="aspan" onclick="getchecked(27,1)"> РџРµРЅРѕСЃРјРµСЃРёС‚РµР»Рё РџРЎ-1 Рё РџРЎ-2</span><br>'
++'<input type=radio name=Q27><span name="aspan" class="aspan" onclick="getchecked(27,2)"> РџРµРЅРЅС‹Рµ РІСЃС‚Р°РІРєРё</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="psk50.png" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf28"></div>'+
-'<input type=radio name=Q28><span name="aspan" class="aspan" onclick="getchecked(28,0)"> СРК-50</span><br>'
-+'<input type=radio name=Q28><span name="aspan" class="aspan" onclick="getchecked(28,1)"> РСК-50</span><br>'
-+'<input type=radio name=Q28><span name="aspan" class="aspan" onclick="getchecked(28,2)"> РС-50</span><br>'
+'<input type=radio name=Q28><span name="aspan" class="aspan" onclick="getchecked(28,0)"> РЎР Рљ-50</span><br>'
++'<input type=radio name=Q28><span name="aspan" class="aspan" onclick="getchecked(28,1)"> Р РЎРљ-50</span><br>'
++'<input type=radio name=Q28><span name="aspan" class="aspan" onclick="getchecked(28,2)"> Р РЎ-50</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="rch-150-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf29"></div>'+
-'<input type=radio name=Q29><span name="aspan" class="aspan" onclick="getchecked(29,0)"> Разветвление РТ-70</span><br>'
-+'<input type=radio name=Q29><span name="aspan" class="aspan" onclick="getchecked(29,1)"> Четырехходовое разветвление РЧ-90</span><br>'
-+'<input type=radio name=Q29><span name="aspan" class="aspan" onclick="getchecked(29,2)"> Четырехходовое разветвление РЧ-150</span><br>'
+'<input type=radio name=Q29><span name="aspan" class="aspan" onclick="getchecked(29,0)"> Р Р°Р·РІРµС‚РІР»РµРЅРёРµ Р Рў-70</span><br>'
++'<input type=radio name=Q29><span name="aspan" class="aspan" onclick="getchecked(29,1)"> Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-90</span><br>'
++'<input type=radio name=Q29><span name="aspan" class="aspan" onclick="getchecked(29,2)"> Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-150</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="rs.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf30"></div>'+
-'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,0)"> СРК-50</span><br>'
-+'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,1)"> РСК-50</span><br>'
-+'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,2)"> РС-50</span><br>'
-+'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,3)"> РС 50 П</span><br>'
+'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,0)"> РЎР Рљ-50</span><br>'
++'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,1)"> Р РЎРљ-50</span><br>'
++'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,2)"> Р РЎ-50</span><br>'
++'<input type=radio name=Q30><span name="aspan" class="aspan" onclick="getchecked(30,3)"> Р РЎ 50 Рџ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="rsk70.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf31"></div>'+
-'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,0)"> РСК-50</span><br>'
-+'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,1)"> СРК-50</span><br>'
-+'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,2)"> РС-А(м), РС-Б(м)</span><br>'
-+'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,3)"> РС-70</span><br>'
-+'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,4)"> РСКЗ-70</span><br>'
+'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,0)"> Р РЎРљ-50</span><br>'
++'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,1)"> РЎР Рљ-50</span><br>'
++'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,2)"> Р РЎ-Рђ(Рј), Р РЎ-Р‘(Рј)</span><br>'
++'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,3)"> Р РЎ-70</span><br>'
++'<input type=radio name=Q31><span name="aspan" class="aspan" onclick="getchecked(31,4)"> Р РЎРљР—-70</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="rsk70.png" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf32"></div>'+
-'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,0)"> РСК-50</span><br>'
-+'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,1)"> РС-50</span><br>'
-+'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,2)"> РС-70</span><br>'
-+'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,3)"> РС 70 АП</span><br>'
+'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,0)"> Р РЎРљ-50</span><br>'
++'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,1)"> Р РЎ-50</span><br>'
++'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,2)"> Р РЎ-70</span><br>'
++'<input type=radio name=Q32><span name="aspan" class="aspan" onclick="getchecked(32,3)"> Р РЎ 70 РђРџ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="rt70-80-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf33"></div>'+
-'<input type=radio name=Q33><span name="aspan" class="aspan" onclick="getchecked(33,0)"> Разветвление РТ-70 и РТ-80</span><br>'
-+'<input type=radio name=Q33><span name="aspan" class="aspan" onclick="getchecked(33,1)"> Четырехходовое разветвление РЧ-150</span><br>'
-+'<input type=radio name=Q33><span name="aspan" class="aspan" onclick="getchecked(33,2)"> Четырехходовое разветвление РЧ-90</span><br>'
+'<input type=radio name=Q33><span name="aspan" class="aspan" onclick="getchecked(33,0)"> Р Р°Р·РІРµС‚РІР»РµРЅРёРµ Р Рў-70 Рё Р Рў-80</span><br>'
++'<input type=radio name=Q33><span name="aspan" class="aspan" onclick="getchecked(33,1)"> Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-150</span><br>'
++'<input type=radio name=Q33><span name="aspan" class="aspan" onclick="getchecked(33,2)"> Р§РµС‚С‹СЂРµС…С…РѕРґРѕРІРѕРµ СЂР°Р·РІРµС‚РІР»РµРЅРёРµ Р Р§-90</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="rukav-standart.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf34"></div>'+
-'<input type=radio name=Q34><span name="aspan" class="aspan" onclick="getchecked(34,0)"> Рукав напорно-всасывающий</span><br>'
-+'<input type=radio name=Q34><span name="aspan" class="aspan" onclick="getchecked(34,1)"> Рукав всасывающий</span><br>'
-+'<input type=radio name=Q34><span name="aspan" class="aspan" onclick="getchecked(34,2)"> Рукав напорный</span><br>'
+'<input type=radio name=Q34><span name="aspan" class="aspan" onclick="getchecked(34,0)"> Р СѓРєР°РІ РЅР°РїРѕСЂРЅРѕ-РІСЃР°СЃС‹РІР°СЋС‰РёР№</span><br>'
++'<input type=radio name=Q34><span name="aspan" class="aspan" onclick="getchecked(34,1)"> Р СѓРєР°РІ РІСЃР°СЃС‹РІР°СЋС‰РёР№</span><br>'
++'<input type=radio name=Q34><span name="aspan" class="aspan" onclick="getchecked(34,2)"> Р СѓРєР°РІ РЅР°РїРѕСЂРЅС‹Р№</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="sv100-125-setka-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf35"></div>'+
-'<input type=radio name=Q35><span name="aspan" class="aspan" onclick="getchecked(35,0)"> Водосборник ВС-125</span><br>'
-+'<input type=radio name=Q35><span name="aspan" class="aspan" onclick="getchecked(35,1)"> Cетки СВ-100, СВ-125</span><br>'
-+'<input type=radio name=Q35><span name="aspan" class="aspan" onclick="getchecked(35,2)"> Сетка СВ-80</span><br>'
+'<input type=radio name=Q35><span name="aspan" class="aspan" onclick="getchecked(35,0)"> Р’РѕРґРѕСЃР±РѕСЂРЅРёРє Р’РЎ-125</span><br>'
++'<input type=radio name=Q35><span name="aspan" class="aspan" onclick="getchecked(35,1)"> CРµС‚РєРё РЎР’-100, РЎР’-125</span><br>'
++'<input type=radio name=Q35><span name="aspan" class="aspan" onclick="getchecked(35,2)"> РЎРµС‚РєР° РЎР’-80</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="tpp-sp-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf36"></div>'+
-'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,0)"> Топор пожарный поясной ТПП-СП</span><br>'
-+'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,1)"> Топор пожарного носимый</span><br>'
-+'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,2)"> Топор пожарный поясной ТПП-СТ</span><br>'
-+'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,3)"> Топор пожарный штурмовой ТПШ-СП</span><br>'
+'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,0)"> РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ РїРѕСЏСЃРЅРѕР№ РўРџРџ-РЎРџ</span><br>'
++'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,1)"> РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅРѕРіРѕ РЅРѕСЃРёРјС‹Р№</span><br>'
++'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,2)"> РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ РїРѕСЏСЃРЅРѕР№ РўРџРџ-РЎРў</span><br>'
++'<input type=radio name=Q36><span name="aspan" class="aspan" onclick="getchecked(36,3)"> РўРѕРїРѕСЂ РїРѕР¶Р°СЂРЅС‹Р№ С€С‚СѓСЂРјРѕРІРѕР№ РўРџРЁ-РЎРџ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="ug.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf37"></div>'+
-'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,0)"> Порошковый огнетушитель</span><br>'
-+'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,1)"> Углекислотный огнетушитель</span><br>'
-+'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,2)"> Аэрозольный</span><br>'
-+'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,3)"> Воздушно-пенные огнетушители</span><br>'
+'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,0)"> РџРѕСЂРѕС€РєРѕРІС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ</span><br>'
++'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,1)"> РЈРіР»РµРєРёСЃР»РѕС‚РЅС‹Р№ РѕРіРЅРµС‚СѓС€РёС‚РµР»СЊ</span><br>'
++'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,2)"> РђСЌСЂРѕР·РѕР»СЊРЅС‹Р№</span><br>'
++'<input type=radio name=Q37><span name="aspan" class="aspan" onclick="getchecked(37,3)"> Р’РѕР·РґСѓС€РЅРѕ-РїРµРЅРЅС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="vozd_pen.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf38"></div>'+
-'<input type=radio name=Q38><span name="aspan" class="aspan" onclick="getchecked(38,0)"> Воздушно-пенные огнетушители</span><br>'
-+'<input type=radio name=Q38><span name="aspan" class="aspan" onclick="getchecked(38,1)"> Углекислотные огнетушители</span><br>'
-+'<input type=radio name=Q38><span name="aspan" class="aspan" onclick="getchecked(38,2)"> Порошковые огнетушители</span><br>'
+'<input type=radio name=Q38><span name="aspan" class="aspan" onclick="getchecked(38,0)"> Р’РѕР·РґСѓС€РЅРѕ-РїРµРЅРЅС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё</span><br>'
++'<input type=radio name=Q38><span name="aspan" class="aspan" onclick="getchecked(38,1)"> РЈРіР»РµРєРёСЃР»РѕС‚РЅС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё</span><br>'
++'<input type=radio name=Q38><span name="aspan" class="aspan" onclick="getchecked(38,2)"> РџРѕСЂРѕС€РєРѕРІС‹Рµ РѕРіРЅРµС‚СѓС€РёС‚РµР»Рё</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="vps-30-50-03.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf39"></div>'+
-'<input type=radio name=Q39><span name="aspan" class="aspan" onclick="getchecked(39,0)"> Веревки спасательная</span><br>'
-+'<input type=radio name=Q39><span name="aspan" class="aspan" onclick="getchecked(39,1)"> Веревка пожарныя спасательная</span><br>'
-+'<input type=radio name=Q39><span name="aspan" class="aspan" onclick="getchecked(39,2)"> Тросс буксировочный</span><br>'
+'<input type=radio name=Q39><span name="aspan" class="aspan" onclick="getchecked(39,0)"> Р’РµСЂРµРІРєРё СЃРїР°СЃР°С‚РµР»СЊРЅР°СЏ</span><br>'
++'<input type=radio name=Q39><span name="aspan" class="aspan" onclick="getchecked(39,1)"> Р’РµСЂРµРІРєР° РїРѕР¶Р°СЂРЅС‹СЏ СЃРїР°СЃР°С‚РµР»СЊРЅР°СЏ</span><br>'
++'<input type=radio name=Q39><span name="aspan" class="aspan" onclick="getchecked(39,2)"> РўСЂРѕСЃСЃ Р±СѓРєСЃРёСЂРѕРІРѕС‡РЅС‹Р№</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="vs125-sm.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf40"></div>'+
-'<input type=radio name=Q40><span name="aspan" class="aspan" onclick="getchecked(40,0)"> Водосборник ВС-125</span><br>'
-+'<input type=radio name=Q40><span name="aspan" class="aspan" onclick="getchecked(40,1)"> Штаны</span><br>'
-+'<input type=radio name=Q40><span name="aspan" class="aspan" onclick="getchecked(40,2)"> Разветвление 2-х ходовое</span><br>'
+'<input type=radio name=Q40><span name="aspan" class="aspan" onclick="getchecked(40,0)"> Р’РѕРґРѕСЃР±РѕСЂРЅРёРє Р’РЎ-125</span><br>'
++'<input type=radio name=Q40><span name="aspan" class="aspan" onclick="getchecked(40,1)"> РЁС‚Р°РЅС‹</span><br>'
++'<input type=radio name=Q40><span name="aspan" class="aspan" onclick="getchecked(40,2)"> Р Р°Р·РІРµС‚РІР»РµРЅРёРµ 2-С… С…РѕРґРѕРІРѕРµ</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="vsas.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf41"></div>'+
-'<input type=radio name=Q41><span name="aspan" class="aspan" onclick="getchecked(41,0)"> Рукав напорный</span><br>'
-+'<input type=radio name=Q41><span name="aspan" class="aspan" onclick="getchecked(41,1)"> Напорно-всасывающий рукав</span><br>'
-+'<input type=radio name=Q41><span name="aspan" class="aspan" onclick="getchecked(41,2)"> Рукав всасывающий </span><br>'
+'<input type=radio name=Q41><span name="aspan" class="aspan" onclick="getchecked(41,0)"> Р СѓРєР°РІ РЅР°РїРѕСЂРЅС‹Р№</span><br>'
++'<input type=radio name=Q41><span name="aspan" class="aspan" onclick="getchecked(41,1)"> РќР°РїРѕСЂРЅРѕ-РІСЃР°СЃС‹РІР°СЋС‰РёР№ СЂСѓРєР°РІ</span><br>'
++'<input type=radio name=Q41><span name="aspan" class="aspan" onclick="getchecked(41,2)"> Р СѓРєР°РІ РІСЃР°СЃС‹РІР°СЋС‰РёР№ </span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="zpr-80-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf42"></div>'+
-'<input type=radio name=Q42><span name="aspan" class="aspan" onclick="getchecked(42,0)"> Зажим пожарный рукавный ЗПР-80</span><br>'
-+'<input type=radio name=Q42><span name="aspan" class="aspan" onclick="getchecked(42,1)"> Зажим пожарный рукавный ЗПР-150</span><br>'
+'<input type=radio name=Q42><span name="aspan" class="aspan" onclick="getchecked(42,0)"> Р—Р°Р¶РёРј РїРѕР¶Р°СЂРЅС‹Р№ СЂСѓРєР°РІРЅС‹Р№ Р—РџР -80</span><br>'
++'<input type=radio name=Q42><span name="aspan" class="aspan" onclick="getchecked(42,1)"> Р—Р°Р¶РёРј РїРѕР¶Р°СЂРЅС‹Р№ СЂСѓРєР°РІРЅС‹Р№ Р—РџР -150</span><br>'
 ,
 '<font color="#333333" saze="3"><p>\r\n'+
 '<img src="zr-80-big.jpg" style="max-width:200px;"> '+
 '</p></font><div class="otv" id="torf43"></div>'+
-'<input type=radio name=Q43><span name="aspan" class="aspan" onclick="getchecked(43,0)"> Крюк пожарный</span><br>'
-+'<input type=radio name=Q43><span name="aspan" class="aspan" onclick="getchecked(43,1)"> крюк для открывания гидранта</span><br>'
-+'<input type=radio name=Q43><span name="aspan" class="aspan" onclick="getchecked(43,2)"> Задержка рукавная</span><br>'
+'<input type=radio name=Q43><span name="aspan" class="aspan" onclick="getchecked(43,0)"> РљСЂСЋРє РїРѕР¶Р°СЂРЅС‹Р№</span><br>'
++'<input type=radio name=Q43><span name="aspan" class="aspan" onclick="getchecked(43,1)"> РєСЂСЋРє РґР»СЏ РѕС‚РєСЂС‹РІР°РЅРёСЏ РіРёРґСЂР°РЅС‚Р°</span><br>'
++'<input type=radio name=Q43><span name="aspan" class="aspan" onclick="getchecked(43,2)"> Р—Р°РґРµСЂР¶РєР° СЂСѓРєР°РІРЅР°СЏ</span><br>'
 ];
 kodvopr = document.getElementsByName("onetest");
 if(mix)vopr_otv.shuffle();
